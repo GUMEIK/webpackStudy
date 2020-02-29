@@ -1,0 +1,18 @@
+div{
+    width:300px;
+    height: 300px;
+    border: 1px solid black;
+    transform: rotate(45deg);
+    h1{
+        color: red;
+    }
+}
+
+::placeholder {
+    color: gray;
+  }
+  
+
+  @media (min-resolution: 2dppx) {
+    
+  }
