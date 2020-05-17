@@ -1,0 +1,10 @@
+* {
+    color:red;
+}
+
+.ppp{
+    background-color: antiquewhite;
+}
+:global(html){
+    background-color: antiquewhite;
+}
