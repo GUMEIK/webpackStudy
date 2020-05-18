@@ -1,3 +1,4 @@
+// 文件加载器将文件上的import/require()解析为url并将文件发送到输出目录。
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
@@ -6,9 +7,10 @@ module.exports = {
             {
                 test: /\.(png)|(jpeg)$/,
                 use: [{
-                    loader: "url-loader",
+                    loader: "file-loader",
                     options: {
-                        limite:10*100,// 只要文件超过10*100字节，将其交给file-loader进行处理
+                        //    文件引入的路径名称
+                        name: '[path][name].[ext]'
                     }
                 }]
             }
